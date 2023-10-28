@@ -1,5 +1,13 @@
 *{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
 margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vw;
 }
 /*Estilo do header acima da navbar */
 header {
@@ -90,9 +98,92 @@ ul li a:hover::before {
     top: 72%;
     left: 48%;
     transform: translateY(-50%);
+    z-index: 1;
 
 }
 
 .store-icon img {
     max-height: 100px;
 }
+/* Estilos para a historia */
+main{
+    width: 100%;
+    height: 550px;
+    position: relative;
+background: rgba(0, 0, 0, 0.5)url(components/src/History-pic.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-blend-mode: darken;
+z-index: 0;
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: -1;
+  }
+.texts-history{
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    margin-left: 20%;
+    position: relative;
+    justify-content: center;
+}
+.principal-text-history {
+    color: #fff; /* Cor branca */
+    position: relative;
+    font-size: 50px; /* Define a posição relativa para facilitar o posicionamento absoluto */
+}
+.subtitle-principal-text-history{
+        display: block;
+        color: #fff; /* Cor branca */
+        position: absolute;
+        top: -20%;
+        left: 0;
+        margin-top: 10px; /* Ajuste o espaçamento entre os textos */
+}
+
+
+.lower-text-history {
+    color: #00ff00; /* Cor verde neon */
+    text-shadow: 0 0 10px #00ff00; /* Efeito de sombra */
+    filter: blur(0.1px); /* Aplicando o efeito de desfoque */
+}
+.complement-text-history{
+    color: #aaa8a8;
+    margin-top: 60px;
+    width: 50%;
+    line-height: 1.5;
+}
+.btns-history{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+.btns-history button{
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.btn-locale{
+    color: rgba(10, 27, 10, 0.521);
+background-color: rgb(83, 247, 137);
+}
+
+.btn-cardapio{
+    border: 1.5px solid rgb(36, 206, 36);
+    background-color: rgba(0, 0, 0, 0.5);
+color: rgb(15, 216, 15);
+}
+.btns-history button i {
+    margin-right: 8px; /* Adiciona margem à direita do ícone */
+  }
