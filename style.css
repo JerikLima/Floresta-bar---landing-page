@@ -317,3 +317,132 @@ background-color: rgb(83, 247, 137);
 border: 1px solid green;
 border-radius: 4px;
 }
+/* shows */
+section.shows{
+gap: 30px;
+margin-top: 400px;
+height: 600px;
+width: 100%;
+border: 0px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+/* footer */
+footer{
+    background-color: #1a1a1a;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.title{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.quadrado{
+    text-align: center;
+    width: 20%; 
+    padding-top: 2%;
+    border: 3px solid; 
+    border-color: gray; 
+    border-radius: 10px;
+    background-color: rgb(27, 25, 25);
+    margin-right: 10px;
+}
+
+.title h5{ color: #01FD6F;
+    font-family: 'Caveat', sans-serif ; font-style: oblique;
+    line-height: normal;
+    font-size: 24px;
+    font-weight: 600;
+}
+   
+.title h1{ color: white;
+    font-size: 56px;
+    font-family:'Raleway', Sans-serif;
+    font-weight: 600;
+}
+
+.container h2{ color: white;
+    font-family: 'Raleway', Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+}
+ 
+footer h6{ color: white;
+    font-family: 'Raleway', Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+
+.container p{  
+    color: rgb(201, 194, 194);
+    font-family: 'Nunito', Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+footer p{  
+    color: rgb(201, 194, 194);
+    font-family: 'Nunito', Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+} 
+
+.espaçamento{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.opções{
+    display: block;
+    flex: 1; 
+    padding: 20px;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.op_barra, .icones_barra{
+    display: flex;
+    margin-right: 50px;
+}
+
+.op_barra p{
+    margin-right: 20px; 
+}
+
+.logo{
+    width: 400px;
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+.logo img{
+    margin-left: 100px;
+}
+.end p{
+    color: #01FD6F; 
+    background-color: black;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: -10px;
+}
